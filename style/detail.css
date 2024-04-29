@@ -1,0 +1,7 @@
+.detailsDiv > img{
+width: 400px;
+}
+.detailsDiv{
+    display: flex;
+    gap: 30px;
+}
