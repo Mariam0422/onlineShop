@@ -12,12 +12,17 @@ fetch(`https://5d76bf96515d1a0014085cf9.mockapi.io/product/${id}`)
     div.classList.add("detailsDiv")
     div.innerHTML = `
     <img src="${data.photos[0]}" alt="">
-    <div>
+    <div class="description">
     <h2>${data.name}</h2>
-    <h3>${data.brand}</h3>
+    <h4>${data.brand}</h4>
     <h3>${data.price} AMD</h3>
-    <p>${data.description}</p>    
-    </div>
+    <h3>Description</h3>
+    <p>${data.description}</p>     
+    <h3>Product Preview</h3>
+    <img class="mini" src="${data.photos[0]}" alt="">
+    <img class="mini" src="${data.photos[1]}" alt="">
+    <img class="mini" src="${data.photos[2]}" alt="">
+    </div> 
     `
     detailsSection.appendChild(div);
   });
