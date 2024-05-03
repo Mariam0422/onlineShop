@@ -12,17 +12,18 @@ fetch(API_URL)
     data.forEach(item => {
         const div = document.createElement("div");
         div.classList.add("productCard");
-        const a = document.createElement("a");
         let itemName = item.name;
-        if(itemName.length > 23){
-            itemName = itemName.substring(0, 20) + "..."
-        }
-        a.innerText = itemName;
-        a.href = `/productDetails.html?${item.id}`;
+        if(itemName.length > 18){
+            itemName = itemName.substring(0, 18) + "..."
+        }       
         div.innerHTML = `
+        <a href = /productDetails.html?${item.id} >
         <img src="${item.photos[0]}" alt="">
+        <h3>${itemName}</h3>
+        <h4>${item.brand}</h4>
+        <h2>${item.price}</h2>
+        </a>
         `
-        div.appendChild(a);
         product_container.appendChild(div);
     });
     console.log(data, "data")
