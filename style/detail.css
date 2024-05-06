@@ -26,4 +26,6 @@ color: rgb(8, 9, 39);
 }
 .detailsDiv  .mini{
     width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
 }

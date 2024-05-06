@@ -70,6 +70,7 @@ header h4 {
  
 }
 #slider img{ 
+  /* display: none; */
   max-width: 100%; 
   height: auto;
 }

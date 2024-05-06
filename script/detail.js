@@ -7,11 +7,11 @@ fetch(`https://5d76bf96515d1a0014085cf9.mockapi.io/product/${id}`)
     return resp.json();
   })
   .then((data) => {
-    console.log(data)
+    console.log(data);
     const div = document.createElement("div");
-    div.classList.add("detailsDiv")
+    div.classList.add("detailsDiv");
     div.innerHTML = `
-    <img src="${data.photos[0]}" alt="">
+    <img class = "mainImg" src="${data.photos[0]}" alt="">
     <div class="description">
     <h2>${data.name}</h2>
     <h4>${data.brand}</h4>
@@ -19,11 +19,21 @@ fetch(`https://5d76bf96515d1a0014085cf9.mockapi.io/product/${id}`)
     <h3>Description</h3>
     <p>${data.description}</p>     
     <h3>Product Preview</h3>
-    <img class="mini" src="${data.photos[0]}" alt="">
-    <img class="mini" src="${data.photos[1]}" alt="">
-    <img class="mini" src="${data.photos[2]}" alt="">
     </div> 
-    `
+    `;
     detailsSection.appendChild(div);
+    const descriptionDiv = document.querySelector(".description");
+    const mainImg = document.querySelector(".mainImg");
+    data.photos.forEach((photo) => {
+      const img = document.createElement("img");
+      img.classList.add("mini");
+      img.src = photo;
+      img.alt = "Product Preview";
+      descriptionDiv.appendChild(img);
+    });
+    descriptionDiv.addEventListener("click", (e) => {
+      if ((e.target.tagName === "IMG")) {
+        mainImg.src = e.target.src;
+      }     
+    });
   });
-

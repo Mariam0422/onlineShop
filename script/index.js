@@ -30,21 +30,6 @@ const product_container = document.getElementById("product_container");
     });
 })();
 
-// let currentSlide = 0;
-// const slides = document.querySelectorAll('.slide');
-// const slideCount = slides.length;
-
-// function nextSlide() {
-
-//   slides[currentSlide].classList.remove('active');
-
-//   currentSlide = (currentSlide + 1) % slideCount;
-
-//   slides[currentSlide].classList.add('active');
-// }
-
-// nextSlide();
-// setInterval(nextSlide, 2000);
 
 const slider = [
   "https://6629450d55391e3236ac1d5b--relaxed-pixie-fba787.netlify.app/img/img1.png",
