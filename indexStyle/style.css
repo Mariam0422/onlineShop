@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #DEF2F1;
+}
+body {
+  background-color: #3AAFA9;
+}
+body::-webkit-scrollbar {
+  display: flex;
+  background-color: #3AAFA9;
+}
+body::-webkit-scrollbar-thumb {
+  display: flex;
+  background-color: #2B7A78;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-color: #2B7A78;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15%;
+}
+body nav * {
+  font-size: 150%;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: auto;
+  width: 80%;
+  gap: 20px;
+  background-color: #388583;
+}
+body main #slider {
+  background-image: url(https://6629450d55391e3236ac1d5b--relaxed-pixie-fba787.netlify.app/img/img1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body main #slider button {
+  height: 100%;
+  width: 20px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.192);
+  border: 0;
+  font-size: 130%;
+  transition: 0.3s;
+}
+body main #slider button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.325);
+}
+body main .product_card {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 2px 15px #2B7A78;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 410px;
+  gap: 10px;
+  max-width: 270px;
+  background-color: #3AAFA9;
+  font-size: 90%;
+  transition: 0.3s;
+}
+body main .product_card:hover {
+  box-shadow: 0 0 30px #133f3e;
+  transform: translate(0, -10px);
+}
+body main .product_card div img {
+  width: 200px;
+  min-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  width: 100%;
+}
+body main section {
+  width: 100%;
+  height: 20vh;
+}
