@@ -17,7 +17,7 @@ const product_container = document.getElementById("product_container");
           itemName = itemName.substring(0, 18) + "...";
         }
         div.innerHTML = `
-        <a href = /productDetails.html?${item.id} >
+        <a href = /productDetail.html?productId=${item.id}>
         <img src="${item.photos[0]}" alt="">
         <h3>${itemName}</h3>
         <h4>${item.brand}</h4>

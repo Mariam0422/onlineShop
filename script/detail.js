@@ -1,8 +1,12 @@
+import { getQueryParam, setQueryParam } from "./queryParam.js";
 const href = window.location.href;
 const idIndex = href.indexOf("?");
-const id = href.slice(idIndex + 1);
+const productId = getQueryParam('productId');
+
+
+
 const detailsSection = document.getElementById("detailsSection");
-fetch(`https://5d76bf96515d1a0014085cf9.mockapi.io/product/${id}`)
+fetch(`https://5d76bf96515d1a0014085cf9.mockapi.io/product/${productId}`)
   .then((resp) => {
     return resp.json();
   })
