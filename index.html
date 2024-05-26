@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./indexStyle/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <!-- HOME -->
-    <nav>
-        <h2>LOGO</h2>
-        <div>
-            <a href="#">&#x1F464</a>
-            <a href="#">&#x1F6D2</a>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Online Shop</title>
+  </head>
+  <body>
+  
     
-    <main id="productContainer">
-        <section id="slider">
-            <button id="slideLeft" style="border-top-left-radius: 10px;">&#10094</button>
-            <button id="slideRight" style="border-top-right-radius: 10px;">&#10095</button>
-        </section>
+   <header>
+    <div>
+      <h2>Էլեկտրոնային </h2>
+      <h4>պահեստ</h4>
+    </div>    
+   </header>
+   <div class="spacer"></div>
+     <div class="slide_container">
+      <button id="prev">&#10094</button>
+      <div id="slider">
+        <!-- <img class="slide" src="./style/img/img1.png" alt="one">
+        <img class="slide" src="./style/img/img2.png" alt="two">
+        <img class="slide" src="./style/img/img3.png" alt="three">
+        <img class="slide" src="./style/img/img4.png" alt="four"> -->
+       </div>
+       <button id="next">&#10095</button>
+     </div>
+     
 
-    </main>
-    
-    <script src="./js/index.js" type="module">
-
-    </script>
-</body>
+    <section id="product_container">
+    </section>
+    <script src="./script/index.js" type="module"></script>
+  </body>
 </html>
